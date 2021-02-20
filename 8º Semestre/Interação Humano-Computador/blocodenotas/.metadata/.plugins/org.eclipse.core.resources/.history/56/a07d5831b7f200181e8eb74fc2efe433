@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+ <top>
+  <MenuBar>
+   <menus>
+    <Menu text="Arquivo">
+     <items>
+      <MenuItem fx:id="btnMenuNovo" text="Novo" />
+      <MenuItem text="Abrir" />
+      <MenuItem text="Salvar" />
+      <MenuItem text="Salvar Como" />
+      <MenuItem text="Sair" />
+     </items>
+    </Menu>
+    <Menu text="Ajuda">
+     <items>
+      <MenuItem text="Ajuda" />
+      <MenuItem text="Sobre o produto" />
+     </items>
+    </Menu>
+   </menus>
+  </MenuBar>
+ </top>
+ <center>
+  <TextArea id="textArea">
+  </TextArea>
+ </center>
+</BorderPane>

@@ -1,0 +1,145 @@
+====================================================================
+28/05/2016
+====================================================================
+  Interface (implements)
+  Diferença de private para protected  
+  
+====================================================================
+14/05/2016
+====================================================================
+  Fila Encadeada
+  Fila Encadeada com Exception // Não foi dado
+  
+  Fazer:
+    - ExerciciosPOO/listaexerc2_fila.doc
+    
+====================================================================
+14/05/2016
+====================================================================
+  Pilha Encadeada
+  Pilha Encadeada com Exception // Não foi dado
+  
+  Fazer:
+    - ExerciciosPOO/listaexerc2_pilha.doc
+    
+====================================================================
+07/05/2016
+====================================================================
+  Fila de Arranjo (Array)  
+  Fila de Arranjo com Exception (Array)
+  
+  Fazer:
+    - ExerciciosPOO/listaexerc1_fila.doc
+
+====================================================================
+30/04/2016
+====================================================================
+  Pilha de Arranjo (Array)  
+  Pilha de Arranjo com Exception (Array)
+  
+  Fazer:
+    - ExerciciosPOO/listaexerc1_pilha.doc
+
+
+====================================================================
+02/04/2016
+====================================================================
+*** Valores de variáveis float tem sempre que ser colocado o 'f' no final do valor, exemplo: 2.6f
+*** Variável de Class SEMPRRREEEEEEEE é "static"
+*** Variável do instância (objeto) NUNCAAAAAAA é "static"
+
+====================================================================
+12/03/2016
+====================================================================
+  Métodos Construtores:
+    - Função com o mesmo nome da class e executa automaticamente quando se chama o "new Class()"
+  Herança e Polimorfismo:
+    - Uma class se extende uma classe pai, exemplo "Class Ferrari extends Car {}"
+
+====================================================================
+05/03/2016
+====================================================================
+
+Fazer exercícios de vetor:
+  -1,2,3,11,12,14,15,16,21
+
+====================================================================
+27/02/2016
+====================================================================
+
+a) if ( x > 1 && x < 10 ) (certo)
+b) if ( (x > 1) && (x < 10) ) (certo porém usar somente quando necessário)
+c) if ( x > 1 ) && () x < 10 ) (errado)
+
+
+Modularização em Java
+  Métodos:
+    - Principal: main
+    - Procedimento: void (antes do nome)
+    - Função: um tipo (int, float, double, char antes do nome da função)
+  
+  Formato Geral:
+    static void (tipo) nome (parâmetros) {
+      - declaração de variaveis extras (se necessário)
+      - comandos
+    }
+  
+  Parâmetros:
+    - sem parâmetros: ()
+    - 1: (tipo parâmetro)
+    - 2: (tipo1 parâmetro1, tipo1 parâmetro2)
+    - 3: (tipo1 parâmetro1, tipo2 parâmetro2, tipo3 parâmetro3)
+    - OBS.: Um função possui pelo menos um comando "return" valor;
+
+  Chamar Procedimento:
+    - nome(valor1)
+    - nome(valor1, valor 2,...)
+    
+  Chamar Função:
+    variavel = nome(valor1,valor2,...);
+
+
+
+====================================================================
+20/02/2016
+====================================================================
+Disciplina: Programação Orientada a Objetos
+Professor: Marcelo Andrade Teixeira
+Avaliação: 3 Provas escritas (sem consulta)
+Máximo de Faltas: 20
+
+Funções Matemáticas:
+   sqrt(a), log10(a), sem(a), cos(a), tan(a), pow(a,b), random()
+Ex:
+   double wal,res;
+   val = 25.0;
+   res = Math.sqrt(val);
+
+Comando de Seleção if/else:
+   if (condicao)
+     comando
+   else
+     comando
+   --------------------------
+   if (condicao)
+      comando;
+   --------------------------  
+   if (condicao) {
+      comando1;
+      comando2;
+   } else {
+      comando3;
+      comando4;
+   }
+   --------------------------  
+Entrada de Dados:
+   next
+   nextLine
+   nextInt
+   nextFloat
+   nextDouble
+   nextBoolean
+Saída de Dados:
+   print
+   println
+   

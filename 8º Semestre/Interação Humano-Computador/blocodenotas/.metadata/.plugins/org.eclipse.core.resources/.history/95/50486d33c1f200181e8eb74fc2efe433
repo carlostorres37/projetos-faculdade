@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+
+<BorderPane fx:id="borderPane" xmlns:fx="http://javafx.com/fxml" fx:controller="application.NotepadController">
+ <top>
+  <MenuBar>
+   <menus>
+    <Menu text="Arquivo">
+     <items>
+      <MenuItem text="Novo" fx:id="btnMenuNovo" onAction="#handleNovoAction"></MenuItem>
+      <MenuItem text="Abrir" fx:id="btnMenuAbrir" onAction="#handleAbrirAction"></MenuItem>
+      <MenuItem text="Salvar" fx:id="btnMenuSalvar" onAction="#handleSalvarAction"></MenuItem>
+      <MenuItem text="Salvar Como" fx:id="btnMenuSalvarComo" onAction="#handleSalvarComoAction"></MenuItem>
+      <MenuItem text="Sair" fx:id="btnMenuSair" onAction="#handleSairAction"></MenuItem>
+     </items>
+    </Menu>
+    <Menu text="Help">
+     <items>
+      <MenuItem text="Ajuda" fx:id="btnMenuAjuda" onAction="#handleAjudaAction"></MenuItem>
+      <MenuItem text="Sobre o produto" fx:id="btnMenuSobre" onAction="#handleSobreAction"></MenuItem>
+     </items>
+    </Menu>
+   </menus>
+  </MenuBar>
+ </top>
+ <center>
+  <TextArea fx:id="textArea">
+  </TextArea>
+ </center>
+</BorderPane>

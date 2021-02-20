@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="147.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="compiladoresa2trab.FXMLDocumentController">
+    <children>
+        <Button fx:id="btValidate" layoutX="14.0" layoutY="46.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="384.0" text="VALIDATE" />
+        <Label fx:id="lblIsValid" layoutX="14.0" layoutY="75.0" minHeight="16" minWidth="69" text="Esperando...">
+         <font>
+            <Font size="41.0" />
+         </font></Label>
+      <TextField fx:id="tfExpression" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="384.0" />
+    </children>
+</AnchorPane>

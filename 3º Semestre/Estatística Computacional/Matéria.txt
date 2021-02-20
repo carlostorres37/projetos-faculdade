@@ -1,0 +1,97 @@
+====================================================================
+27/05/2016
+====================================================================
+Distribuição de Probabilidade:
+  pnorm(valor_de_pesquisa, media, desvio_padrão)
+
+====================================================================
+08/04/2016
+====================================================================
+Gráficos:
+  plot(Idade, Renda)       // Gerar gráfico de dispersão envolvendo os valores das idades (eixo x) e rendas (eixo y)
+  plot(Idade,Renda,,main="Gráfico de Dispersão",col="dark red",pch=16,type="b")
+  
+  hist(NotaA1)             // Gera um histograma
+  hist(NotaA1,ylab="",border="purple",col="blue",las =1, main="HISTOGRAMA DAS NOTAS A1",xlab="NOTAS")
+
+Desvio Padrão:  
+  sd(NotaA1)               // Calcula o desvio-padrão
+
+Sequências:
+  seq(from=5, to=20, by=2) // Faz a sequência de 5 ate 20 de 2 em 2
+  seq(1, 100, 1)           // Faz a sequência de 1 ate 100 de 1 em 1
+  seq(1,200,2)             // Faz a sequência de 1 a 200 de 2 em 2
+  rep(1:5,2)               // Faz os números de  1 a 5  serem repetidos 2 vezes
+
+Repetições:
+  rep(1,10)               // Faz o numero 1 ser repetido 10 vezes
+
+  amplitudenotas<-max(NotaA1)-min(NotaA1)   
+  table(x)                // Mostra os valores e as quantidades de vezes que o mesmo valor aparece no vetor
+  var(x)                  // Variância do Vetor
+  sd(x)/sqrt(length(x))   // Erro-padrão de Média - Mede a precisão da média
+  range(x)                // Mosta os valores extremos, o menor e o maior valor do vetor
+  sort(x)                 // Ordena o vetor em ordem crescente
+  sort(y,decreasing=TRUE) // Ordena em ordem decrescente.
+  log(base=2,x=8)         // Log
+  max(vet)-min(vet)       // Amplitude
+  sum(a)                  // Soma dos elementos do vetor
+  length(a)               // Quantidade de elmementos de um vetor
+  sum(a)/length(a)        // Média do vetor
+  mean(a)                 // Função de média do vetor
+  sqrt(a)                 // Raiz Quadrada de cada elemento do vetor
+  
+  x[1]              // Retorna o valor da posição 1 do vetor
+  x[4]              // Retorna o valor da posição 4 do vetor
+  x[8]              // Retorna o valor da posição 8 do vetor
+  x[x==89]          // Retorna quantidade de vezes que o número 89 se encontra no vetor
+  x[c(1,2,3)]       // Retorna os valores das casas selecionadas no vetor interno
+  x[-c(2,3)]        // Retorna todos os outros elementos que não sejam do vetor interno
+  x[x==max(x)]      // Retorna a quantidade de vezes que o maior valor do vetor se encontra no vetor
+  x[x==min(x)]      // Retorna a quantidade de vezes que o menor valor do vetor se encontra no vetor
+  
+  a-b               // Subtrai cada elemento do vetor A com o elemento do vetor B da mesma casa
+  a*b               // Multiplica cada elemento do vetor A com o elemento do vetor B da mesma casa
+  a/b               // Divide cada elemento do vetor A com o elemento do vetor B da mesma casa
+  b/a               // Divide cada elemento do vetor B com o elemento do vetor A da mesma casa
+  a*a               // Multiplica cada elemento do vetor A com o elemento do vetor A da mesma casa
+  a^3               // Multiplica cada elemento do vetor A por 3
+  b^4               // Multiplica cada elemento do vetor B por 4
+  sum(a,a)          // Soma do vetor A com o vetor A
+  sum(a,b)          // Soma do vetor A com o vetor B
+
+====================================================================
+01/04/2016
+====================================================================
+  Média de Tendência Central no Ambiente R:
+    notasmat <- c(1,2,3,4,5,6,7,8,9,10,10,10,9,8.8,8.8,6.7,6.7,4,4,4,4); // Atribuição
+    mediaturma <- mean(notasmat); //Média
+    medianaturma <- median(notasmat); // Mediana
+    tfreq <- table(notasmat); // Frequência de vezes que um número aparece no array
+    
+    notasmat[11] <- NA;       // Limpando Dados
+    notasmat[12] <- NA;       // Limpando Dados
+    notasmat[21] <- NA;       // Limpando Dados   
+    mean(notasmat);           // Return será NA pois existem NA no array
+    mean(notasmat, na.rm=T);  // Retira os valores NA do array para fazer as médias
+    is.na(notasmat);          // Valida cada elemento verificando se existe valor 'NA' ou nao, trazendo resultado como TRUE (se for NA) ou FALSE (se nao for NA)
+    
+    - Variância: média das diferenças ao quadrado entre observações e seuas médias 
+      varianciaturma <- sum((notasmat-mean(notasmat))^2)/(length(notasmat)-1);
+      varianciaturma <- var(notasmat);
+
+Correlação Positiva:
+  Renda
+  |       .
+  |     .
+  |   .
+  | .
+  |-----------> Idade
+  
+Correlação Negativa:
+  Renda
+  | .      
+  |    .   
+  |      .
+  |        .
+  |-----------> Idade

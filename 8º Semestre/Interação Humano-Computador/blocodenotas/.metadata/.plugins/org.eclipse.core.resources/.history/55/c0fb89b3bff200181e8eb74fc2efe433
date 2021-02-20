@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.AjudaController">
+   <children>
+      <Hyperlink layoutX="-29.0" layoutY="-32.0" text="WWW.GOOGLE.COM.BR" fx:id="lnkAjuda">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

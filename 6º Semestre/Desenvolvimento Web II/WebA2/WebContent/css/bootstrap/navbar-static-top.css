@@ -1,0 +1,58 @@
+/*
+<h1><c:out value="meu primeiro exemplo usando JST"/></h1>
+
+<c:if test="${param.nome != null }">
+	<c:set var ="nome" value="${param.nome}"/>
+	Seu nome é: <c:out value="${nome}"/>
+	<br/>
+</c:if>
+
+<c:remove var ="nome"/>
+
+<c:choose>
+	<c:when test="${nome != null}">
+	    A variavel nome contém o valor ${nome }<br/>
+	</c:when>
+	<c:otherwise>
+	    A variavel nome foi removida
+	</c:otherwise>
+</c:choose>
+
+<form action="${pageContext.request.requestURI}" method="post" >
+	Nome: <input type="text"' name="nome"/><br />
+	<input type="submit" value="Enviar"/>
+</form>
+
+<c:set var="c" value="${param.c }"/>
+<p> C = <c:out value ="${param.c}" default="0"/></p>
+<c:set var="f" value="${c*9/5+32}"/>
+<p> F = <c:out value ="${f}" /></p>
+<c:remove var="c"/>
+<c:remove var="f"/>
+<p><c:out value="${c}" default ="variavel c removida"/></p>
+<p><c:out value="${f}" default ="variavel f removida"/></p>
+
+<c:if test='${param.A == null }'>
+    <p>[Parâmetro A ausente]</p>
+</c:if>
+<c:if test='${param.B == null }'>
+    <p>[Parâmetro B ausente]</p>
+</c:if>
+<c:if test='${not empty param.A && not empty param.B}'>
+    <p>[<c:out value= "A=${param.A}, B=${param.B}"/>]</p>
+	<c:if test='${param.A ge param.B}'>
+	    <b> Resultado: A >= B </b></p>
+	</c:if>
+	<c:if test='${param.A lt param.B}'>
+	    <b> Resultado: A < B </b></p>
+	</c:if>
+</c:if>
+*/
+
+body {
+  min-height: 2000px;
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+}

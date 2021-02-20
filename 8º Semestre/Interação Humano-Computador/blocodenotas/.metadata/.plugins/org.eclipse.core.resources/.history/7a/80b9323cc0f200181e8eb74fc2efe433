@@ -1,0 +1,18 @@
+package application;
+
+import javafx.application.HostServices;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Hyperlink;
+
+public class AjudaController {
+	@FXML Hyperlink lnkAjuda;
+	
+	@FXML protected void handleAjudaAction(ActionEvent event) {
+		try {
+	        new ProcessBuilder("x-www-browser", "http://www.google.com.br").start();
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	}
+}

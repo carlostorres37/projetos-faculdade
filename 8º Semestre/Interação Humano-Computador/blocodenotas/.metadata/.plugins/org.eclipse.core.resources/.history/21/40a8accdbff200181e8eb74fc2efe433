@@ -1,0 +1,13 @@
+package application;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Hyperlink;
+
+public class AjudaController {
+	@FXML Hyperlink lnkAjuda;
+	
+	@FXML protected void handleAjudaAction(ActionEvent event) {
+	
+	}
+}

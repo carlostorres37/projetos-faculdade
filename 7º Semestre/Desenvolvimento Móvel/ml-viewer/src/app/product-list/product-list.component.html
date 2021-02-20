@@ -1,0 +1,12 @@
+<div *ngIf="productList != null; else message">
+  <h3>Termo de pesquisa: {{ searchTerm }}</h3>
+  <hr>
+  <div class="row">
+    <div *ngFor="let product of productList" class="col-md-3">
+      <app-product-list-item [product]="product"></app-product-list-item>
+    </div>
+  </div>
+</div>
+<ng-template #message>
+  <h1>Pesquise pelo nome do produto.</h1>
+</ng-template>
